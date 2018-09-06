@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "name":"Bard-Graph-Widget",
+        "type":"bargraph",
+        "title":"Bar Graph View - Dashboard"
+    },
+    {
+        "id":"2",
+        "name":"Pie-Graph-Widget",
+        "type":"piegraph",
+        "title":" Graph View Data - Dashboard"
+    },
+    {
+        "id":"3",
+        "name":"Table-Data-Widget",
+        "type":"tabledata",
+        "title":" Graph View Data - Dashboard"
+    }
+]
