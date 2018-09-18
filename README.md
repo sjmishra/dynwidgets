@@ -24,3 +24,6 @@ component router as below
 
 
 listwidgets is a list holding attributes of widget objects like title, name, type of widget.
+
+Steps for deploy:
+1. npm run build:prod

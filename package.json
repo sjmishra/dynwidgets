@@ -5,8 +5,11 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "npm run build && nodemon ./bin/www",
-    "build": "npx ./node_modules/.bin/webpack --mode production --config webpack.config.js",
+    "start": "npm run build:prod && nodemon ./bin/www",
+    "build": "npx ./node_modules/.bin/webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --env dev --open",
+    "build:dev": "webpack --env dev --progress  --profile --colors",
+    "build:prod": "webpack --env prod --progress  --profile --colors",
     "seed-widgets": "mongoimport widgets.json --jsonArray --collection=widgets --db=dynwidgets"
   },
   "author": "Santosh Mishra",
@@ -26,7 +29,8 @@
     "morgan": "^1.9.0",
     "nodemon": "^1.17.4",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "save-dev": "^2.0.0"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -36,11 +40,17 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "jest-cli": "^22.4.3",
     "node-dev": "^3.1.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
     "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3"
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.8"
   }
 }

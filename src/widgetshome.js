@@ -48,6 +48,7 @@ request({url: '/api/widgets'})
     </div>
       )
 
+      // Uncomment when test with server side template code
     ReactDOM.render(widgets,
       document.getElementById('app')
     ) 

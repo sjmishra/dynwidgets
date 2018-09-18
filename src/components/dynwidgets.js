@@ -27,7 +27,7 @@ class DynWidgets extends React.Component {
   getWidgetView(widg){
       const DynWidg = components[widg.widgetType]
       return (<div>
-                  <table><tr><td>
+                  <table className='table table-striped'><tr><td>
                       <DynWidg id={widg.id} title={widg.title} widgetName={widg.widgetName} widgetType={widg.widgetName} /> </td>
                   <td>
                       <Link to={`/widgetdetails`}>About This Widget</Link>
