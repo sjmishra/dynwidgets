@@ -25,5 +25,10 @@ component router as below
 
 listwidgets is a list holding attributes of widget objects like title, name, type of widget.
 
-Steps for deploy:
+Steps for deploy and run: This uses webpack.prod.config.js which is resolved from webpack.config.js passing env = prod as param.
 1. npm run build:prod
+2. npm start
+
+Steps for dev: this starts webpack-dev-server on port 9000, rendering testapp.js for testing individual component dynmically using webpack.dev.config.js. This speeds up dev, without restart of server and changes are loaded immediately.
+
+1. npm run dev
